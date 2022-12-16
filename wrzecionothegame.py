@@ -6,6 +6,7 @@ z = 0
 #---------------------------------
 def move(x,z):
     while True:
+        print('---------------------------------------------')
         print("KOORDYNATY: ", 'x=', x, "z=", z)
         print("a) Północ")
         print("b) Południe")
