@@ -14,11 +14,11 @@ def move(x,z):
         respond = input('')
         if respond == "a" or "A":
             x += 10
-        if respond == "b" or "B":
+        elif respond == "b" or "B":
             x -= 10
-        if respond == "c" or "C":
+        elif respond == "c" or "C":
             z -= 10
-        if respond == "d" or "D":
+        elif respond == "d" or "D":
             z += 10
 #---------------------------------
 print("WRZECIONO THE GAME")
