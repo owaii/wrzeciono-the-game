@@ -12,13 +12,13 @@ def move(x,z):
         print("c) Zachód")
         print("d) Wschód")
         respond = input('')
-        if respond == "a" or "A":
+        if respond == "a":
             x += 10
-        elif respond == "b" or "B":
+        elif respond == "b":
             x -= 10
-        elif respond == "c" or "C":
+        elif respond == "c":
             z -= 10
-        elif respond == "d" or "D":
+        elif respond == "d":
             z += 10
 #---------------------------------
 print("WRZECIONO THE GAME")
