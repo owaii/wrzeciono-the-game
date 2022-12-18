@@ -4,9 +4,21 @@ import time
 x = 0
 z = 0
 hajs = 0
-hp = randint(5,10)
-moc = randint(5,10)
+hp = randint(1,10)
+moc = randint(1,10)
 #---------------------------------
+def mapa():
+    print("------------------------")
+    print('okrąglak x = 50 z = 10')
+    print('metro młociny x = -80 z = 20')
+    print('las bielański x = 20 z = -40')
+    print('szpital bielański x = -30 z = -10')
+    print('Kościół Niepokalanego Poczęcia Najświętszej Maryi Panny x = 70 z = 10')
+    print("------------------------")
+
+    time.sleep(12)
+    move(x,z)
+#------------------------------------------------------------------------------
 def move(x,z):
     while True:
         print('----------------------------------------------------------------------------------')
@@ -17,6 +29,7 @@ def move(x,z):
         print("b) Południe")
         print("c) Zachód")
         print("d) Wschód")
+        print("e) Mapa")
         respond = input('')
         if respond == "a":
             x += 10
@@ -26,6 +39,8 @@ def move(x,z):
             z -= 10
         elif respond == "d":
             z += 10
+        elif respond == "e":
+            mapa()
 #---------------------------------
 print(' __          __ _____   ______ ______  _____  _____  ____   _   _   ____  ')
 print(' \ \        / /|  __ \ |___  /|  ____|/ ____||_   _|/ __ \ | \ | | / __ \ ')
