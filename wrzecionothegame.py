@@ -4,8 +4,61 @@ import time
 x = 0
 z = 0
 hajs = 0
-hp = randint(1,10)
-moc = randint(1,10)
+hp = 5
+maxhp = randint(5,10)
+moc = randint(2,5)
+#---
+hpg = 5
+mg = 2
+#---
+hpm = 7
+mm = 5
+#---
+hpk = 3
+mk = 2
+
+#---------------------------------
+#---------------------------------
+def zadyma(hpk,mk,hp):
+    zadymiarz = 3
+    if zadymiarz == (1):
+        print('zadymiarz grzesio | hp = 5/5 | moc = 2')
+        
+    elif zadymiarz == (2):
+        
+        print('zadymiarz najlepszy | hp = 7/7 | moc = 5')
+        
+    elif zadymiarz == (3):
+       
+        print('zadymiarz kacper | hp = 3/3 | moc = 2')
+        
+        while hpk > 0: 
+            
+            print('a) biję')
+            print('b) uciekam')
+            walkarespond = input('')
+            if walkarespond == ('a'):
+                hpk -= moc
+                time.sleep(1)
+                print("zadajesz " ,moc, " damage i zostaje mu ", hpk, " hp")
+                if hpk <=0 :
+                    time.sleep(0.5)
+                    print('wygrywasz')
+                
+                else: 
+                    hp -= mk
+                    time.sleep(2)
+                    print("dostajesz ",mk, " damage i zostaje ci ", hp, " hp")
+                
+#---------------------------------
+def lok1():
+    print("-------OKRĄGLAK-------")
+    print('a) szukam zadymy')
+    print('b) idę do żabki')
+    print('c) spierdalam')
+    respond = input('')
+    if respond == "a":
+        zadyma(hpk,mk,hp)
 #---------------------------------
 def mapa():
     print("------------------------")
@@ -21,10 +74,12 @@ def mapa():
 #------------------------------------------------------------------------------
 def move(x,z):
     while True:
+        if (x==50) and (z == 10):
+            lok1()
         print('----------------------------------------------------------------------------------')
-        print(heros,"  KOORDYNATY: ", 'x=', x, "z=", z , "|| hajs: ", hajs, "zł || hp: ", hp,"/",hp, "|| moc: ", moc)
+        print(heros,"  KOORDYNATY: ", 'x=', x, "z=", z , "|| hajs: ", hajs, "zł || hp: ", hp,"/",maxhp, "|| moc: ", moc)
         print('----------------------------------------------------------------------------------')
-
+        
         print("a) Północ")
         print("b) Południe")
         print("c) Zachód")
