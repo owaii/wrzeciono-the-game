@@ -43,7 +43,13 @@ def zadyma(hpk,mk,hp):
                 print("zadajesz " ,moc, " damage i zostaje mu ", hpk, " hp")
                 if hpk <=0 :
                     time.sleep(0.5)
-                    print('wygrywasz')
+                    print('                                                 ')
+                    print(' _ _ _  __ __  _____  _____  _____  _____  _____ ')
+                    print('| | | ||  |  ||   __|| __  ||  _  ||   | ||  _  |')
+                    print('| | | ||_   _||  |  ||    -||     || | | ||     |')
+                    print('|_____|  |_|  |_____||__|__||__|__||_|___||__|__|')
+                    print('                                                 ')
+
                 
                 else: 
                     hp -= mk
