@@ -48,6 +48,32 @@ def zadyma(hpk,mk,hp):
     elif zadymiarz == (3):
        
         print('zadymiarz kacper | hp = 3/3 | moc = 2')
+        print('                 .--.')
+        print('                /.''.|')
+        print('                ||   \_)')
+        print('          /^\   `.`--,')
+        print('        .`_|_`.   `()')
+        print('       <   |   >   ||')
+        print('        \_____/    ||')
+        print('        {/a a\}    ||')
+        print('       {/-.^.-\}   (_|')
+        print('      .`{  `  }-._/|;\`')
+        print('     /  {     }  /; || |')
+        print('    /``-{     }-`;  || |')
+        print('   ; ``=|{   }|=` _/|| |')
+        print('   |   \| |~| |  |/ || |')
+        print('   |\   \ | | |  ;  || |')
+        print('   | \   ||=| |=<\  || |')
+        print('   | /\_/\| | |  \`-||_/')
+        print('   `-| `;`| | |  |  ||')
+        print('     |  | | | |  |  ||')
+        print('     |  |+| |+|  |  ||')
+        print('     |  """ """  |  ||')
+        print('     |_ _ _ _ _ _|  ||')
+        print('     |,;,;,;,;,;,|  ||')
+        print('     `|||||||||||`  ||')
+        print('      |||||||||||   ||')
+        print('      `"""""""""`   ""')
         
         while hpk > 0: 
             
