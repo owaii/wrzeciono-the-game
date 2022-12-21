@@ -1,5 +1,6 @@
 from random import randint
 import time
+import sys
 #---------------------------------
 x = 0
 z = 0
@@ -18,6 +19,9 @@ hpk = 3
 mk = 2
 
 #---------------------------------
+
+#-----------Zadymiarze------------
+
 #---------------------------------
 def zadyma(hpk,mk,hp):
     zadymiarz = 3
@@ -48,35 +52,15 @@ def zadyma(hpk,mk,hp):
     elif zadymiarz == (3):
        
         print('zadymiarz kacper | hp = 3/3 | moc = 2')
-        print('                 .--.')
-        print('                /.''.|')
-        print('                ||   \_)')
-        print('          /^\   `.`--,')
-        print('        .`_|_`.   `()')
-        print('       <   |   >   ||')
-        print('        \_____/    ||')
-        print('        {/a a\}    ||')
-        print('       {/-.^.-\}   (_|')
-        print('      .`{  `  }-._/|;\`')
-        print('     /  {     }  /; || |')
-        print('    /``-{     }-`;  || |')
-        print('   ; ``=|{   }|=` _/|| |')
-        print('   |   \| |~| |  |/ || |')
-        print('   |\   \ | | |  ;  || |')
-        print('   | \   ||=| |=<\  || |')
-        print('   | /\_/\| | |  \`-||_/')
-        print('   `-| `;`| | |  |  ||')
-        print('     |  | | | |  |  ||')
-        print('     |  |+| |+|  |  ||')
-        print('     |  """ """  |  ||')
-        print('     |_ _ _ _ _ _|  ||')
-        print('     |,;,;,;,;,;,|  ||')
-        print('     `|||||||||||`  ||')
-        print('      |||||||||||   ||')
-        print('      `"""""""""`   ""')
         
         while hpk > 0: 
             
+#------------------------------
+
+#----------Walka i napisy------
+
+#------------------------------
+
             print('a) biję')
             print('b) uciekam')
             walkarespond = input('')
@@ -99,6 +83,8 @@ def zadyma(hpk,mk,hp):
                     time.sleep(2)
                     print("dostajesz ",mk, " damage i zostaje ci ", hp, " hp")
                     time.sleep(1)
+                    print('                                          ')
+                    print('                        //                ')
                     print(' _____  _____  _   _  _____ ______  ______')
                     print('|_   _|/  __ \| | | ||  _  || ___ \|___  /')
                     print('  | |  | /  \/| |_| || | | || |_/ /   / / ')
@@ -108,15 +94,75 @@ def zadyma(hpk,mk,hp):
                     print('                                          ')
                 
 #---------------------------------
+
+#----------Lokalizacja1-----------
+
+#---------------------------------
+
 def lok1():
     print("-------OKRĄGLAK-------")
     print('a) szukam zadymy')
-    print('b) idę do żabki')
-    print('c) spierdalam')
+    print('b) idę do żabki')  #-----żabka=śmierć----
+    print('c) spierdalam')      #-----tchórz=śmierć-----
     respond = input('')
     if respond == "a":
         zadyma(hpk,mk,hp)
+
+    
+    elif respond == "b":
+        print('Wybierz produkt')
+        print('a) Baton mocy')
+        print('b) Kustosz mocne')
+        print('c) Woda')
+        respond = input('')
+        if respond == "b":
+            print('Chlejesz Kustosza i zdychasz, bo w twoim organizmie jest 6 promili piwa')
+            time.sleep(4)
+            sys.exit("GAME OVER")
+        
+        elif respond == "c":
+            print("Na Wrzecionie nie pije się wody ty śmieciu")
+            time.sleep(2)
+            sys.exit("GAME OVER")
+            
+        elif respond == "a":
+            print('Mmmm smaczne...')
+            time.sleep(2)
+            print("O kurde ja..ja..EUHGHGHGHG")
+            time.sleep(2)
+            print("Sprzedawca: O sory niechcący dałem ci Jad kiełbasiany. Zdychaj LOL")
+            time.sleep(4)
+            sys.exit("GAME OVER")
+    
+    
+    elif respond == "c"
+        print('                                          ')
+        print('                        //                ')
+        print(' _____  _____  _   _  _____ ______  ______')
+        print('|_   _|/  __ \| | | ||  _  || ___ \|___  /')
+        print('  | |  | /  \/| |_| || | | || |_/ /   / / ')
+        print('  | |  | |    |  _  || | | ||    /   / /  ')
+        print('  | |  | \__/\| | | |\ \_/ /| |\ \ ./ /___')
+        print('  \_/   \____/\_| |_/ \___/ \_| \_|\_____/')
+        print('                                          ') 
+        time.sleep(4)
+        sys.exit("GAME OVER")
+        
 #---------------------------------
+
+#----------Lokalizacja2-----------
+
+#---------------------------------
+
+def lok2():
+    print("-------METRO MŁOCINY-------")
+            
+   
+#-----------------------------------
+
+#-----------Mapa-------------------
+
+#-----------------------------------
 def mapa():
     print("------------------------")
     print('okrąglak x = 50 z = 10')
@@ -128,6 +174,10 @@ def mapa():
 
     time.sleep(12)
     move(x,z)
+#------------------------------------------------------------------------------
+
+#---------------------Poruszanie się-------------------------------------------
+
 #------------------------------------------------------------------------------
 def move(x,z):
     while True:
@@ -153,7 +203,11 @@ def move(x,z):
             z += 10
         elif respond == "e":
             mapa()
-#---------------------------------
+#--------------------------------------------------------------
+
+#----------------------Napis ( Logo )-------------------------
+
+#--------------------------------------------------------------
 print(' /$$      /$$ /$$$$$$$  /$$$$$$$$ /$$$$$$$$  /$$$$$$  /$$$$$$  /$$$$$$  /$$   /$$  /$$$$$$ ')
 print('| $$  /$ | $$| $$__  $$|_____ $$ | $$_____/ /$$__  $$|_  $$_/ /$$__  $$| $$$ | $$ /$$__  $$')
 print('| $$ /$$$| $$| $$  \ $$     /$$/ | $$      | $$  \__/  | $$  | $$  \ $$| $$$$| $$| $$  \ $$')
@@ -162,8 +216,8 @@ print('| $$$$_  $$$$| $$__  $$   /$$/   | $$__/   | $$        | $$  | $$  | $$| 
 print('| $$$/ \  $$$| $$  \ $$  /$$/    | $$      | $$    $$  | $$  | $$  | $$| $$\  $$$| $$  | $$')
 print('| $$/   \  $$| $$  | $$ /$$$$$$$$| $$$$$$$$|  $$$$$$/ /$$$$$$|  $$$$$$/| $$ \  $$|  $$$$$$/')    
 print('|__/     \__/|__/  |__/|________/|________/ \______/ |______/ \______/ |__/  \__/ \______/ ')              
-print('                             /$$$$$$$$ /$$   /$$ /$$$$$$$$')              
-print('                             |__  $$__/| $$  | $$| $$_____/')
+print('                           /$$$$$$$$ /$$   /$$ /$$$$$$$$')              
+print('                          |__  $$__/| $$  | $$| $$_____/')
 print('                             | $$   | $$  | $$| $$      ')
 print('                             | $$   | $$$$$$$$| $$$$$   ')
 print('                             | $$   | $$__  $$| $$__/   ')
