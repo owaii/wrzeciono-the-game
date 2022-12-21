@@ -28,6 +28,23 @@ def zadyma(hpk,mk,hp):
         
         print('zadymiarz najlepszy | hp = 7/7 | moc = 5')
         
+    elif zadymiarz == (4):
+        
+        print('zadymiarz kaśka | hp = 1/1 | moc = 1')
+        print('                               _.._')
+        print('                             .'    '.')
+        print('                            (____/`\ |')
+        print('                           (  |' ' )  )')
+        print('                           )  _\= _/  (')
+        print('                 __..---.(`_.  ` \    )')
+        print('                `;-""-._(_( .      `; (')
+        print('                /       `-```--     ;  )')
+        print('               /    /  .    ( .  ,| |(')
+        print('_.-` ---...__,     /-,..___.- -- _| |_)')
+        print(' - `` -.._       ,   |   / ......... ')
+        print('          ``;--"`;   |   `-`')
+        print('             ``..__.`')
+        
     elif zadymiarz == (3):
        
         print('zadymiarz kacper | hp = 3/3 | moc = 2')
@@ -55,6 +72,14 @@ def zadyma(hpk,mk,hp):
                     hp -= mk
                     time.sleep(2)
                     print("dostajesz ",mk, " damage i zostaje ci ", hp, " hp")
+                    time.sleep(1)
+                    print(' _____  _____  _   _  _____ ______  ______')
+                    print('|_   _|/  __ \| | | ||  _  || ___ \|___  /')
+                    print('  | |  | /  \/| |_| || | | || |_/ /   / / ')
+                    print('  | |  | |    |  _  || | | ||    /   / /  ')
+                    print('  | |  | \__/\| | | |\ \_/ /| |\ \ ./ /___')
+                    print('  \_/   \____/\_| |_/ \___/ \_| \_|\_____/')
+                    print('                                          ')
                 
 #---------------------------------
 def lok1():
