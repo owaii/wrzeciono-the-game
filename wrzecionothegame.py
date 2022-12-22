@@ -186,53 +186,7 @@ def zadymak(hpkk,mkk,hp):
 
 #---------------------------------
 
-def lok1():
-    print("-------OKRĄGLAK-------")
-    print('a) szukam zadymy')
-    print('b) idę do żabki')  #-----żabka=śmierć----
-    print('c) spierdalam')      
-    respond = input('')
-    #---------------------------------
-    #-------Odpowiedź a---------------
-    #---------------------------------
-    if respond == "a":
-        zadyma(hpk,mk,hp)
-    
-    #---------------------------------
-    #-------Odpowiedź b---------------
-    #---------------------------------
 
-    
-    elif respond == "b":
-        print('Wybierz produkt')
-        print('a) Baton mocy')
-        print('b) Kustosz mocne')
-        print('c) Woda')
-        respond = input('')
-        if respond == "b":
-            print('Chlejesz Kustosza i zdychasz, bo w twoim organizmie jest 6 promili piwa')
-            time.sleep(4)
-            sys.exit("GAME OVER")
-        
-        elif respond == "c":
-            print("Na Wrzecionie nie pije się wody ty śmieciu")
-            time.sleep(2)
-            sys.exit("GAME OVER")
-            
-        elif respond == "a":
-            print('Mmmm smaczne...')
-            time.sleep(2)
-            print("O kurde ja..ja..EUHGHGHGHG")
-            time.sleep(2)
-            print("Sprzedawca: O sory niechcący dałem ci Jad kiełbasiany. Zdychaj LOL")
-            time.sleep(4)
-            sys.exit("GAME OVER")
-    
-    #---------------------------------
-    #-------Odpowiedź c---------------
-    #---------------------------------
-    
-    #---odpowiedź gdy klikniesz c czyli spierdalaj prowadzi automatycznie do move więc nie trzeba tego pisać---
         
     
         
@@ -403,11 +357,58 @@ def mapa():
 #---------------------Poruszanie się-------------------------------------------
 
 #------------------------------------------------------------------------------
-def move(x,z):
+def move(x,z,hajs):
     while True:
-        if (x==50) and (z == 10):
-            lok1()
         
+        if (x==50) and (z == 10):
+                
+            print("-------OKRĄGLAK-------")
+            print('a) szukam zadymy')
+            print('b) idę do żabki')  #-----żabka=śmierć----
+            print('c) spierdalam')      
+            respond = input('')
+            #---------------------------------
+            #-------Odpowiedź a---------------
+            #---------------------------------
+            if respond == "a":
+                hajs += 50
+                zadyma(hpk,mk,hp)
+    
+            #---------------------------------
+            #-------Odpowiedź b---------------
+            #---------------------------------
+
+    
+            elif respond == "b":
+                print('Wybierz produkt')
+                print('a) Baton mocy')
+                print('b) Kustosz mocne')
+                print('c) Woda')
+                respond = input('')
+                if respond == "b":
+                    print('Chlejesz Kustosza i zdychasz, bo w twoim organizmie jest 6 promili piwa')
+                    time.sleep(4)
+                    sys.exit("GAME OVER")
+        
+            elif respond == "c":
+                print("Na Wrzecionie nie pije się wody ty śmieciu")
+                time.sleep(2)
+                sys.exit("GAME OVER")
+            
+            elif respond == "a":
+                print('Mmmm smaczne...')
+                time.sleep(2)
+                print("O kurde ja..ja..EUHGHGHGHG")
+                time.sleep(2)
+                print("Sprzedawca: O sory niechcący dałem ci Jad kiełbasiany. Zdychaj LOL")
+                time.sleep(4)
+                sys.exit("GAME OVER")
+    
+    #---------------------------------
+    #-------Odpowiedź c---------------
+    #---------------------------------
+    
+    #---odpowiedź gdy klikniesz c czyli spierdalaj prowadzi automatycznie do move więc nie trzeba tego pisać---
         elif (x==(-80)) and (z == 20):
             lok2()
         
@@ -475,4 +476,4 @@ if heros == "wrzeciono man":
     time.sleep(3)
     sys.exit("WRZECIONO MAN JEST TYLKO JEDEN")
 else:
-    move(x,z)
+    move(x,z,hajs)
