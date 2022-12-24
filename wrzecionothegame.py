@@ -37,23 +37,6 @@ def zadyma(hpk,mk,hp):
         
         print('zadymiarz najlepszy | hp = 7/7 | moc = 5')
         
-    elif zadymiarz == (4):
-        
-        print('zadymiarz kaśka | hp = 1/1 | moc = 1')
-        print('                               _.._')
-        print('                             .'    '.')
-        print('                            (____/`\ |')
-        print('                           (  |' ' )  )')
-        print('                           )  _\= _/  (')
-        print('                 __..---.(`_.  ` \    )')
-        print('                `;-""-._(_( .      `; (')
-        print('                /       `-```--     ;  )')
-        print('               /    /  .    ( .  ,| |(')
-        print('_.-` ---...__,     /-,..___.- -- _| |_)')
-        print(' - `` -.._       ,   |   / ......... ')
-        print('          ``;--"`;   |   `-`')
-        print('             ``..__.`')
-        
     elif zadymiarz == (3):
        
         print('zadymiarz kacper | hp = 3/3 | moc = 2')
@@ -100,6 +83,7 @@ def zadyma(hpk,mk,hp):
                 time.sleep(1)
                 print("zadajesz " ,moc, " damage i zostaje mu ", hpk, " hp")
                 if hpk <=0 :
+                    hajs += 50
                     time.sleep(0.5)
                     print('                                                 ')
                     print(' _ _ _  __ __  _____  _____  _____  _____  _____ ')
@@ -178,165 +162,8 @@ def zadymak(hpkk,mkk,hp):
                 print('                                          ')
         
     
-    
-                
-#---------------------------------
+        
 
-#----------Lokalizacja1-----------
-
-#---------------------------------
-
-
-        
-    
-        
-#---------------------------------
-
-#----------Lokalizacja2-----------
-
-#---------------------------------
-
-def lok2():
-    print("-------METRO MŁOCINY-------")
-    print("a) Wsiadasz do metra")
-    print("b) Skaczesz pod metro")
-    print("c) Idziesz leżakować na ławce")
-    print("d) Szukasz zadymy")
-    print("e) Spierdalam")
-    Mrespond = input('')
-    #---------------------------------
-    #-------Odpowiedź a---------------
-    #---------------------------------
-    if Mrespond == "a":
-        print("*Wsiadasz do metra*")
-        time.sleep(3)
-        print("*Spotykasz Wrzeciono Man*")
-        time.sleep(3)
-        print("*Kłaniasz się i grzecznie prosisz żeby cię nie zabił*")
-        time.sleep(3)
-        print("Wrzeciono Man: nie jesteś wart mojego wzroku...")
-        time.sleep(3)
-        print('                _  ')
-        print(' _____ _____ _ //_ ')
-        print('|  __ |_   _| \ | |')
-        print('| |  \/ | | |  \| |')
-        print('| | __  | | | . ` |')
-        print('| |_\ \_| |_| |\  |')
-        print(' \____/\___/\_| \_/')
-        print('                   ')
-        time.sleep(5)
-        sys.exit("GAME OVER")
-    #---------------------------------
-    #-------Odpowiedź b---------------
-    #---------------------------------
-    
-    elif Mrespond == "b":
-        print("*Skaczesz pod metro*")
-        time.sleep(1)
-        print("*Metro idealnie się zatrzymuje przed tobą*")
-        time.sleep(3)
-        print("NIEEEEEEEEEEE!")
-        time.sleep(2)
-        print("*Nie wiesz co zrobić i wychodzisz z metra*")
-        time.sleep(4)
-        
-    #---------------------------------
-    #-------Odpowiedź c---------------
-    #---------------------------------
-        
-    elif Mrespond == "c":
-        print("*Kładziesz się na ławce*")
-        time.sleep(3)
-        print("*Nagle czujesz że ktoś cie dotyka*")
-        time.sleep(3)
-        print("Eeee panie co ty robisz!?")
-        time.sleep(2)
-        print("Zaczynasz czuć coś że ostrego wbija ci się w brzuch, a ty niemożesz nic zrobić, ponieważ jesteś przywiązany...")
-        time.sleep(6)
-        print("Rozglądasz się i widzisz że jesteś w pokoju tortur, a twój portfel jest pusty...")
-        time.sleep(3)
-        print("Ruszasz się? (tak lub nie)")
-        trespond = input('')
-        if trespond == ("tak" or "TAK"):
-            print("*Drugi menel zauważa cię ruszającego się...*")
-            time.sleep(5)
-            print("Nie...")
-            time.sleep(1)
-            print("To nie może być...")
-            time.sleep(1)
-            print("kaśka? (bijesz się?(tak lub nie))")
-            krespond = input('')
-            if krespond == ("tak" or "TAK"):
-                zadymak(hpkk,mkk,hp)        #----kaśce dałem wcześniejszą formułę zadymy bo ona cie obrabowuje i nie masz żadnych pieniędzy----
-                
-            else:
-                print("*Kaśka do ciebie podchodzi*")
-                time.sleep(2)
-                print("Kaśka: Od dawno na to czekałam ", heros, "...")
-                time.sleep(2)
-                print("*Kaśka przebija cię nagle tulipanem z butelki po piwie, i nieżyjesz*")
-                time.sleep(4)
-                sys.exit("GAME OVER")
-                
-        elif trespond == ("nie" or "NIE"):
-            print("Narzędzie powoli przebija się przez twoją skórę...")
-            time.sleep(2)
-            print("Zaczyna cię coraz bardziej drażnić...")
-            time.sleep(3)
-            print("Nagle kaśka podchodzi do ciebie i coś ci wstrzykuje.")
-            time.sleep(3)
-            print("Narzędzie przebija cię na wylot, i umierasz")
-            time.sleep(0.5)
-            print("*W tle słychać smiech kaśki*")
-            time.sleep(4)
-            sys.exit("GAME OVER")
-            
-    #---------------------------------
-    #-------Odpowiedź d---------------
-    #---------------------------------
-    
-    elif Mrespond == "d":
-        print("ZADYMAAAAA!")
-        #----tutaj będzie zadyma z grzesiem( z tą poprawioną formułą), którą się tam gdzieś wyżej zdefiniuje----
-        print("Niestety narazie zadyma nie działa poprawnie więc nic tu nie ma..")
-        time.sleep(3)
-        print("...i pozwole ci poprostu odejść.")
-        time.sleep(2)
-        
-    #---------------------------------
-    #-------Odpowiedź e---------------
-    #---------------------------------
-        
-    elif Mrespond == "e":
-        print("Próbujesz wrócić, ale nagle przed tobą staje 6 umięsnionych mężczyzn.")
-        time.sleep(2)
-        print("Otaczają cię, i każą się ukłonić, poniważ nazywają siebie Wrzeciońskim Gangiem Osiedlowym")
-        print("Kłaniasz się?")
-        gangrespond = input('')
-        if gangrespond == ("tak" or "TAK"):
-            print("*Kłaniasz się*")
-            time.sleep(2)
-            print("*Myślisz że ci się udało i w końcu wyjdziesz*")
-            time.sleep(2)
-            print("Nagle jeden z gangsterów wyjmuje spluwę i strzela ci w łeb.")
-            time.sleep(0.5)
-            print("W tle słychać: No co takich tchórzy trzeba tępić.")
-            time.sleep(4)
-            sys.exit("GAME OVER")
-        
-        elif gangrespond == ("nie" or "NIE"):
-            print("*Nie kłaniasz się*")
-            time.sleep(2)
-            print("Gangsterzy wnerwiają się, i każdy z nich po kolei wbija ci sztylet w brzuch.")
-            time.sleep(4)
-            print("Powoli wykrwawiasz się na Wrzeciońskich ziemiach...")
-            time.sleep(4)
-            sys.exit("GAME OVER")
-        
-        
-        
-            
-   
 #-----------------------------------
 
 #-----------Mapa-------------------
@@ -359,6 +186,11 @@ def mapa():
 #------------------------------------------------------------------------------
 def move(x,z,hajs):
     while True:
+#---------------------------------
+
+#----------Lokalizacja1-----------
+
+#---------------------------------
         
         if (x==50) and (z == 10):
                 
@@ -409,8 +241,201 @@ def move(x,z,hajs):
     #---------------------------------
     
     #---odpowiedź gdy klikniesz c czyli spierdalaj prowadzi automatycznie do move więc nie trzeba tego pisać---
+
+    #---------------------------------
+
+
+
+
+
+
+        #---------------------------------
+
+        #----------Lokalizacja2-----------
+
+        #---------------------------------
+
         elif (x==(-80)) and (z == 20):
-            lok2()
+            print("-------METRO MŁOCINY-------")
+            print("a) Wsiadasz do metra")
+            print("b) Skaczesz pod metro")
+            print("c) Idziesz leżakować na ławce")
+            print("d) Szukasz zadymy")
+            print("e) Spierdalam")
+            Mrespond = input('')
+            #---------------------------------
+            #-------Odpowiedź a---------------
+            #---------------------------------
+            if Mrespond == "a":
+                print("*Wsiadasz do metra*")
+                time.sleep(3)
+                print("*Spotykasz Wrzeciono Man*")
+                time.sleep(3)
+                print("*Kłaniasz się i grzecznie prosisz żeby cię nie zabił*")
+                time.sleep(3)
+                print("Wrzeciono Man: nie jesteś wart mojego wzroku...")
+                time.sleep(3)
+                print('                _  ')
+                print(' _____ _____ _ //_ ')
+                print('|  __ |_   _| \ | |')
+                print('| |  \/ | | |  \| |')
+                print('| | __  | | | . ` |')
+                print('| |_\ \_| |_| |\  |')
+                print(' \____/\___/\_| \_/')
+                print('                   ')
+                time.sleep(5)
+                sys.exit("GAME OVER")
+            #---------------------------------
+            #-------Odpowiedź b---------------
+            #---------------------------------
+            
+            elif Mrespond == "b":
+                print("*Skaczesz pod metro*")
+                time.sleep(1)
+                print("*Metro idealnie się zatrzymuje przed tobą*")
+                time.sleep(3)
+                print("NIEEEEEEEEEEE!")
+                time.sleep(2)
+                print("*Nie wiesz co zrobić i wychodzisz z metra*")
+                time.sleep(4)
+                
+            #---------------------------------
+            #-------Odpowiedź c---------------
+            #---------------------------------
+                
+            elif Mrespond == "c":
+                print("*Kładziesz się na ławce*")
+                time.sleep(3)
+                print("*Nagle czujesz że ktoś cie dotyka*")
+                time.sleep(3)
+                print("Eeee panie co ty robisz!?")
+                time.sleep(2)
+                print("Zaczynasz czuć coś że ostrego wbija ci się w brzuch, a ty niemożesz nic zrobić, ponieważ jesteś przywiązany...")
+                time.sleep(6)
+                print("Rozglądasz się i widzisz że jesteś w pokoju tortur, a twój portfel jest pusty...")
+                time.sleep(3)
+                print("Ruszasz się? (tak lub nie)")
+                trespond = input('')
+                if trespond == ("tak" or "TAK"):
+                    print("*Drugi menel zauważa cię ruszającego się...*")
+                    time.sleep(5)
+                    print("Nie...")
+                    time.sleep(1)
+                    print("To nie może być...")
+                    time.sleep(1)
+                    print("kaśka? (bijesz się?(tak lub nie))")
+                    krespond = input('')
+                    if krespond == ("tak" or "TAK"):
+                        zadymak(hpkk,mkk,hp)        #----kaśce dałem wcześniejszą formułę zadymy bo ona cie obrabowuje i nie masz żadnych pieniędzy----
+                        
+                    else:
+                        print("*Kaśka do ciebie podchodzi*")
+                        time.sleep(2)
+                        print("Kaśka: Od dawno na to czekałam ", heros, "...")
+                        time.sleep(2)
+                        print("*Kaśka przebija cię nagle tulipanem z butelki po piwie, i nieżyjesz*")
+                        time.sleep(4)
+                        sys.exit("GAME OVER")
+                        
+                elif trespond == ("nie" or "NIE"):
+                    print("Narzędzie powoli przebija się przez twoją skórę...")
+                    time.sleep(2)
+                    print("Zaczyna cię coraz bardziej drażnić...")
+                    time.sleep(3)
+                    print("Nagle kaśka podchodzi do ciebie i coś ci wstrzykuje.")
+                    time.sleep(3)
+                    print("Narzędzie przebija cię na wylot, i umierasz")
+                    time.sleep(0.5)
+                    print("*W tle słychać smiech kaśki*")
+                    time.sleep(4)
+                    sys.exit("GAME OVER")
+                    
+            #---------------------------------
+            #-------Odpowiedź d---------------
+            #---------------------------------
+            
+            elif Mrespond == "d":
+                print("ZADYMAAAAA!")
+                #----tutaj będzie zadyma z grzesiem( z tą poprawioną formułą), którą się tam gdzieś wyżej zdefiniuje----
+                print("Niestety narazie zadyma nie działa poprawnie więc nic tu nie ma..")
+                time.sleep(3)
+                print("...i pozwole ci poprostu odejść.")
+                time.sleep(2)
+                
+            #---------------------------------
+            #-------Odpowiedź e---------------
+            #---------------------------------
+                
+            elif Mrespond == "e":
+                print("Próbujesz wrócić, ale nagle przed tobą staje 6 umięsnionych mężczyzn.")
+                time.sleep(2)
+                print("Otaczają cię, i każą się ukłonić, poniważ nazywają siebie Wrzeciońskim Gangiem Osiedlowym")
+                print("Kłaniasz się?")
+                gangrespond = input('')
+                if gangrespond == ("tak" or "TAK"):
+                    print("*Kłaniasz się*")
+                    time.sleep(2)
+                    print("*Myślisz że ci się udało i w końcu wyjdziesz*")
+                    time.sleep(2)
+                    print("Nagle jeden z gangsterów wyjmuje spluwę i strzela ci w łeb.")
+                    time.sleep(0.5)
+                    print("W tle słychać: No co takich tchórzy trzeba tępić.")
+                    time.sleep(4)
+                    sys.exit("GAME OVER")
+                
+                elif gangrespond == ("nie" or "NIE"):
+                    print("*Nie kłaniasz się*")
+                    time.sleep(2)
+                    print("Gangsterzy wnerwiają się, i każdy z nich po kolei wbija ci sztylet w brzuch.")
+                    time.sleep(4)
+                    print("Powoli wykrwawiasz się na Wrzeciońskich ziemiach...")
+                    time.sleep(4)
+                    sys.exit("GAME OVER")
+
+        
+        #---------------------------------
+
+        #----------Lokalizacja2-----------
+
+        #---------------------------------
+
+
+
+        elif (x==20) and (z==(-40))
+            print("-------LAS BIELAŃSKI-------")
+            print("a) Wspinasz się na drzewo")
+            print("b) Szukasz wiewiórek")
+            print("c) Uderzasz w drzewo")
+            print("d) Idziesz ścieżką")
+            print("e) Spie")
+            Lasrespond = input('')
+            if Lasrespond == "a":
+                print("Wspinasz się na drzewo, ale twoje umiejętności fizyczne nie umożliwiają ci tego i spadasz.")
+                time.sleep(2)
+                print("Tracisz przytomność...")
+                time.sleep(60)
+                print("Jezu serio czekałeś całą minutę na to")
+                time.sleep(2)
+                print("Dobra więc odzyskałeś przytomność, co robisz?")
+                time.sleep(3)
+                print("a) Idę ścieżką")
+                print("b) Zaczynasz płakać")
+                spadekrespond = input('')
+                if spadekrespond == "a"
+                    print("Idąc ścieżką, spotykasz znanego ci menela Grzesia. Przywitasz się?")
+                    grzerespond = input('')
+                    if grzerespond == "tak"
+                        print("Witasz się z nim i razem pijecie cytrynówke")
+                        time.sleep(2)
+                        print("")
+                        
+        
+        
+        
+            
+   
+
+
         
         print('----------------------------------------------------------------------------------')
         print(heros,"  KOORDYNATY: ", 'x=', x, "z=", z , "|| hajs: ", hajs, "zł || hp: ", hp,"/",maxhp, "|| moc: ", moc)
@@ -477,3 +502,4 @@ if heros == "wrzeciono man":
     sys.exit("WRZECIONO MAN JEST TYLKO JEDEN")
 else:
     move(x,z,hajs)
+    
