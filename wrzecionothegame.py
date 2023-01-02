@@ -429,10 +429,95 @@ def move(x,z,hajs):
                         time.sleep(2)
                         print("")
                         
+        #---------------------------------------------------------
+
+        #--------------------Lokalizacja 3------------------------
+
+        #---------------------------------------------------------
         
         
-        
-            
+        elif (x==70) and (z==10)
+                
+                print("-------Kościół Niepokalanego Poczęcia Najświętszej Maryi Panny-------")
+                print('a) Wejdź do środka')
+                print('b) Zacznij zbierać datki')
+                print('c) Odejdź')
+                KOrespond = input('')
+                
+                #-------Odpowiedź A----------
+                
+                if KOrespond == "a"
+                        print('Wchodzisz do środka')
+                        time.sleep(2)
+                        print('Wybierz co chcesz robić:')
+                        print('')
+                        print('a) Pomódl się')
+                        print('b) Pójdź na zaplecze')
+                        print('c) Szukaj ostrej wymiany słownej z osobami w kościele')
+                        print('d) Wyjdź z kościoła')
+                        KO1repond = input('')
+                                        
+                                if KO1repsond == "a"
+                                        print('Zyskałeś szacunek')
+                                elif KO1repsond == "b"
+                                        print('Spotykasz księdza, co mówisz:')
+                                        print('')
+                                        print('a) Rozmawiasz o życiu')
+                                        print('b) Pytasz się gdzie jest łazienka')
+                                        print('c) Wyzywasz go na pojedynek')
+                                        Ksiorespond = input('')
+                                                
+                                                if Ksiorespond == "a"
+                                                        print('Zanudziłeś się na śmierć')
+                                                        sys.exit("GAME OVER")
+                                                
+                                                elif Ksiorespond == "b"
+                                                        print('Wchodzisz do łazienki')
+                                                elif Ksiorespond == "c"
+                                                        zadyma()
+                                
+                                
+                                elif KO1repsond == "c"
+                                        print('Zaczynasz rozmowę')
+                                        time.sleep(30)
+                                        print('Kończy ci się czas więc próbujesz zakończyć rozmowę')
+                                        time.sleep(2)
+                                        print('Nie wytrzymujesz psychicznie')
+                                        time.sleep(2)
+                                        print('')
+                                        print('a) Wywołaj zadymę')
+                                        print('b) Poczekaj')
+                                        Zadrespond = input('')
+                                        
+                                                if Zadrespond == "a"
+                                                        print('OK')
+                                                        time.sleep(1)
+                                                        zadyma()
+                                                elif Zadrespond == "b"
+                                                        print('Giniesz z wycieńczenia')
+                                                        sys.exit("GAME OVER")
+                                        
+                                elif KO1repsond == "d"
+                                        print('Wychodzisz z kościoła')
+                
+                #----------Odpowiedź B--------
+                
+                elif KOrespond == "b"
+                        print('Zaczynasz zbierać datki na siebie')
+                        time.sleep(5)
+                        print('Uzbierałeś 5 hajsu')
+                        
+                #--------------Odpowiedź C------
+                
+                elif KOrespond == "c"
+                        print('O ty szczylu')
+                        print('')
+                        print('Co tak do kościoła przyjść i nawet nie wejść do środka!')
+                        print('')
+                        time.sleep(2)
+                        print('WSTYD!')
+                        time.sleep(3)
+                        zadyma()
    
 
 
@@ -441,17 +526,17 @@ def move(x,z,hajs):
         print(heros,"  KOORDYNATY: ", 'x=', x, "z=", z , "|| hajs: ", hajs, "zł || hp: ", hp,"/",maxhp, "|| moc: ", moc)
         print('----------------------------------------------------------------------------------')
         
-        print("a) Północ")
-        print("b) Południe")
-        print("c) Zachód")
+        print("w) Północ")
+        print("s) Południe")
+        print("a) Zachód")
         print("d) Wschód")
         print("e) Mapa")
         respond = input('')
-        if respond == "a":
+        if respond == "w":
             x += 10
-        elif respond == "b":
+        elif respond == "s":
             x -= 10
-        elif respond == "c":
+        elif respond == "a":
             z -= 10
         elif respond == "d":
             z += 10
