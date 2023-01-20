@@ -442,11 +442,11 @@ def move(x,z,hajs):
        print('a) Wejdź do środka')
        print('b) Zacznij zbierać datki')
        print('c) Odejdź')
-       KOrespond = input('')
+       Kosciol_wybor = input('')
                 
                 #-------Odpowiedź A----------
                 
-                if KOrespond == "a":
+                if Kosciol_wybor == "a":
                         print('Wchodzisz do środka')
                         time.sleep(2)
                         print('Wybierz co chcesz robić:')
@@ -455,29 +455,29 @@ def move(x,z,hajs):
                         print('b) Pójdź na zaplecze')
                         print('c) Szukaj ostrej wymiany słownej z osobami w kościele')
                         print('d) Wyjdź z kościoła')
-                        KO1respond = input('')
+                        Kosciol_wybor_a = input('')
                                         
-                                if KO1repsond == "a":
+                                if Kosciol_wybor_a == "a":
                                         print('Zyskałeś szacunek')
-                                elif KO1respond == "b":
+                                elif Kosciol_wybor_a == "b":
                                         print('Spotykasz księdza, co mówisz:')
                                         print('')
                                         print('a) Rozmawiasz o życiu')
                                         print('b) Pytasz się gdzie jest łazienka')
                                         print('c) Wyzywasz go na pojedynek')
-                                        Ksiorespond = input('')
+                                        ksiadz_wybor = input('')
                                                 
-                                                if Ksiorespond == "a":
+                                                if Ksiadz_wybor == "a":
                                                         print('Zanudziłeś się na śmierć')
                                                         sys.exit("GAME OVER")
                                                 
-                                                elif Ksiorespond == "b":
+                                                elif Ksiadz_wybor == "b":
                                                         print('Wchodzisz do łazienki')
-                                                elif Ksiorespond == "c":
+                                                elif Ksiadz_wybor == "c":
                                                         zadyma()
                                 
                                 
-                                elif KO1respond == "c":
+                                elif Kosciol_wybor_a == "c":
                                         print('Zaczynasz rozmowę')
                                         time.sleep(30)
                                         print('Kończy ci się czas więc próbujesz zakończyć rozmowę')
@@ -487,29 +487,29 @@ def move(x,z,hajs):
                                         print('')
                                         print('a) Wywołaj zadymę')
                                         print('b) Poczekaj')
-                                        Zadrespond = input('')
+                                        Kosciol_osoby = input('')
                                         
-                                                if Zadrespond == "a":
+                                                if Kosciol_osoby == "a":
                                                         print('OK')
                                                         time.sleep(1)
                                                         zadyma()
-                                                elif Zadrespond == "b":
+                                                elif Kosciol_osoby == "b":
                                                         print('Giniesz z wycieńczenia')
                                                         sys.exit("GAME OVER")
                                         
-                                elif KO1repsond == "d":
+                                elif Kosciol_wybor_a == "d":
                                         print('Wychodzisz z kościoła')
                 
                 #----------Odpowiedź B--------
                 
-                elif KOrespond == "b":
+                elif Kosciol_wybor == "b":
                         print('Zaczynasz zbierać datki na siebie')
                         time.sleep(5)
                         print('Uzbierałeś 5 hajsu')
                         
                 #--------------Odpowiedź C------
                 
-                elif KOrespond == "c":
+                elif Kosciol_wybor == "c":
                         print('O ty szczylu')
                         print('')
                         print('Co tak do kościoła przyjść i nawet nie wejść do środka!')
