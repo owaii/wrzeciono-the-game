@@ -438,11 +438,11 @@ def move(x,z,hajs):
         
         elif (x==70) and (z==10)
                 
-                print("-------Kościół Niepokalanego Poczęcia Najświętszej Maryi Panny-------")
-                print('a) Wejdź do środka')
-                print('b) Zacznij zbierać datki')
-                print('c) Odejdź')
-                KOrespond = input('')
+       print("-------Kościół Niepokalanego Poczęcia Najświętszej Maryi Panny-------")
+       print('a) Wejdź do środka')
+       print('b) Zacznij zbierać datki')
+       print('c) Odejdź')
+       KOrespond = input('')
                 
                 #-------Odpowiedź A----------
                 
@@ -455,11 +455,11 @@ def move(x,z,hajs):
                         print('b) Pójdź na zaplecze')
                         print('c) Szukaj ostrej wymiany słownej z osobami w kościele')
                         print('d) Wyjdź z kościoła')
-                        KO1repond = input('')
+                        KO1respond = input('')
                                         
                                 if KO1repsond == "a":
                                         print('Zyskałeś szacunek')
-                                elif KO1repsond == "b":
+                                elif KO1respond == "b":
                                         print('Spotykasz księdza, co mówisz:')
                                         print('')
                                         print('a) Rozmawiasz o życiu')
@@ -477,7 +477,7 @@ def move(x,z,hajs):
                                                         zadyma()
                                 
                                 
-                                elif KO1repsond == "c":
+                                elif KO1respond == "c":
                                         print('Zaczynasz rozmowę')
                                         time.sleep(30)
                                         print('Kończy ci się czas więc próbujesz zakończyć rozmowę')
