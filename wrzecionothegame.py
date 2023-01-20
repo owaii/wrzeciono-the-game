@@ -436,7 +436,7 @@ def move(x,z,hajs):
         #---------------------------------------------------------
         
         
-        elif (x==70) and (z==10)
+        elif (x==70) and (z==10):
                 
        print("-------Kościół Niepokalanego Poczęcia Najświętszej Maryi Panny-------")
        print('a) Wejdź do środka')
