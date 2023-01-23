@@ -465,7 +465,7 @@ def move(x,z,hajs):
                                         print('a) Rozmawiasz o życiu')
                                         print('b) Pytasz się gdzie jest łazienka')
                                         print('c) Wyzywasz go na pojedynek')
-                                        ksiadz_wybor = input('')
+                                        Ksiadz_wybor = input('')
                                                 
                                                 if Ksiadz_wybor == "a":
                                                         print('Zanudziłeś się na śmierć')
